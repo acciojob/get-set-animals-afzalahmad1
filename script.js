@@ -12,23 +12,24 @@ class Animal {
 }
 
 class Dog extends Animal {
-	constructor(){
+	constructor(species){
 		super(species)
 	}
 	bark(){
-		console.log(`The ${this._species} barks.`)
+		console.log(`The ${this.species} barks.`)
 	}
 }
 
 class Cat extends Animal {
-	constructor(){
+	constructor(species){
 		super(species)
 	}
 	purr(){
 		console.log(`The ${this._species} purrs.`)
 	}
 }
-
+let dog = new Dog('dog')
+dog.bark()
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
